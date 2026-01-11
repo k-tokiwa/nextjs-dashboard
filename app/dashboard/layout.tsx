@@ -2,11 +2,11 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 // import { Sidebar as AppSidebar } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/app-sidebar"
-import { NuqsAdapter } from 'nuqs/adapters/next/app'
+// import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <NuqsAdapter>
+    // <NuqsAdapter>
       <SidebarProvider
       style={{
     "--sidebar-width": "10rem",
@@ -25,6 +25,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </main>
         </div>
       </SidebarProvider>
-    </NuqsAdapter>
+    // </NuqsAdapter>
   )
 }
