@@ -9,7 +9,13 @@ const users = [
   },
 ];
 
-const customers = [
+export type Customer = {
+  id: string;
+  name: string;
+  email: string;
+  image_url: string;
+};
+const customers: Customer[] = [
   {
     id: 'd6e15727-9fe1-4961-8c5b-ea44a9bd81aa',
     name: 'Evil Rabbit',
