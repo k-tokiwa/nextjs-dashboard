@@ -5,6 +5,8 @@ import { customers, type Customer } from '@/app/lib/placeholder-data'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
+export const dynamic = 'force-dynamic'
+
 export default function CustomersPage() {
   // URLの ?id=... と同期する state。初期値は null
   const [selectedId, setSelectedId] = useQueryState('id')
